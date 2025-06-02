@@ -91,6 +91,7 @@ main {
 
 .view-3 {
   display: flex;
+  flex-direction: column;
   width: 100%;
   color: wheat;
   opacity: 70%;
@@ -169,6 +170,9 @@ main {
   }
   .view-2 p {
     font-size: 3rem;
+  }
+  .view-3 {
+    flex-direction: row;
   }
   .view-3 .class3 {
     display: flex;
