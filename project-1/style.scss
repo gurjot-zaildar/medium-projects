@@ -193,6 +193,9 @@ p{
      }
  }
  .view-3{
+    .class3{
+    display: flex;
+
     h6{
     font-size: 2rem;
     opacity: 60%;
@@ -205,30 +208,28 @@ h3{
 p{
     line-height: 2.5rem;
     font-size: 2rem;
-    
+         
 }
+
     .blocka{
-        line-height: 50px;
-         position: absolute;
-         width: 25%;
-         height: 40%;
-         margin-left: 5%;
+        line-height: 50px; 
+         width: 100%;
+         height: 100%;
+         
         
 }
  .blockb{
         line-height: 50px;
-         position: absolute;
-         width: 25%;
-         height: 40%;
-         margin-left: 37%;
+         width: 100%;
+         height:100%;
+        
 }
 .blockc{
         line-height: 50px;
-         position: absolute;
-         width: 25%;
-         height: 40%;
-         margin-left: 69%;
+         width: 100%;
+         height: 100%;
+        
 }
 
  }
-}
+}}
