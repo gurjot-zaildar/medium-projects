@@ -46,3 +46,162 @@ main {
 .view-1 p br {
   display: none;
 }
+
+.view-2 {
+  width: 100%;
+  padding: 4rem 3rem;
+  display: flex;
+  justify-content: center;
+}
+.view-2 .marquee {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.view-2 .marquee::after {
+  content: "";
+  height: 100%;
+  width: 50%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: linear-gradient(to right, #0e0e0e, transparent);
+}
+.view-2 .marquee::before {
+  content: "";
+  height: 100%;
+  width: 50%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 2;
+  background-image: linear-gradient(to left, #0e0e0e, transparent);
+}
+.view-2 .marquee .text {
+  display: flex;
+  gap: 2rem;
+  padding: 0 1.5rem;
+  animation: marquee 10s linear infinite both;
+}
+.view-2 p {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.view-3 {
+  display: flex;
+  width: 100%;
+  color: wheat;
+  opacity: 70%;
+}
+.view-3 h6 {
+  font-size: 1rem;
+  opacity: 60%;
+}
+.view-3 h3 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.view-3 p {
+  margin-top: 10px;
+  font-weight: 100;
+}
+.view-3 .blocka {
+  border: solid;
+  padding: 30px;
+  line-height: 1.5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-color: #2c2a29;
+  background-color: #181716;
+  border-width: 1px;
+  margin-bottom: 15px;
+}
+.view-3 .blockb {
+  border: solid;
+  padding: 30px;
+  line-height: 1.5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-color: #2c2a29;
+  background-color: #181716;
+  border-width: 1px;
+  margin-bottom: 15px;
+}
+.view-3 .blockc {
+  border: solid;
+  padding: 30px;
+  line-height: 1.5rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-color: #2c2a29;
+  background-color: #181716;
+  border-width: 1px;
+  margin-bottom: 15px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media (min-width: 1024px) {
+  .view-1 img {
+    width: 40%;
+  }
+  .view-1 h1 {
+    font-size: 11.8rem;
+  }
+  .view-1 p {
+    font-size: 2rem;
+  }
+  .view-1 p br {
+    display: block;
+  }
+  .view-2 .marquee {
+    width: 80%;
+  }
+  .view-2 .marquee .text {
+    gap: 7rem;
+  }
+  .view-2 p {
+    font-size: 3rem;
+  }
+  .view-3 h6 {
+    font-size: 2rem;
+    opacity: 60%;
+  }
+  .view-3 h3 {
+    font-size: 3rem;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .view-3 p {
+    line-height: 2.5rem;
+    font-size: 2rem;
+  }
+  .view-3 .blocka {
+    line-height: 50px;
+    position: absolute;
+    width: 25%;
+    height: 40%;
+    margin-left: 5%;
+  }
+  .view-3 .blockb {
+    line-height: 50px;
+    position: absolute;
+    width: 25%;
+    height: 40%;
+    margin-left: 37%;
+  }
+  .view-3 .blockc {
+    line-height: 50px;
+    position: absolute;
+    width: 25%;
+    height: 40%;
+    margin-left: 69%;
+  }
+}
