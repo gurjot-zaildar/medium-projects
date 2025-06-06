@@ -1,0 +1,130 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  padding: 0.7rem;
+}
+
+main {
+  padding: 1.5%;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+.view-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.view-1 p {
+  font-size: 0.9rem;
+}
+.view-1 h1 {
+  font-size: 4rem;
+  width: 70%;
+  font-weight: 400;
+  line-height: 1;
+}
+.view-1 img {
+  margin-top: 1rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 1rem;
+}
+
+.view-2 {
+  padding: 1rem;
+}
+.view-2 .box-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.view-2 h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+  width: 90%;
+}
+.view-2 button {
+  background-color: black;
+  color: blanchedalmond;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+}
+.view-2 .line-1 {
+  background-color: black;
+  height: 1px;
+  width: 100%;
+  margin-top: 30px;
+}
+.view-2 .subbox svg {
+  margin-top: 1.5rem;
+  width: 4rem;
+  aspect-ratio: 1/1;
+}
+.view-2 .subbox h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.view-2 .subbox p {
+  margin-top: 1rem;
+  font-size: medium;
+  line-height: 26px;
+}
+.view-2 .subbox .line-1 {
+  background-color: black;
+  height: 1px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+@media (min-width: 1024px) {
+  .view-1 h1 {
+    font-size: 6rem;
+    width: 60%;
+    font-weight: 500;
+  }
+  .view-2 {
+    display: flex;
+    flex-direction: row;
+  }
+  .box-1 {
+    width: 60%;
+    justify-content: space-between;
+  }
+  .box-1 h1 {
+    font-size: 5rem;
+  }
+  .line {
+    height: initial;
+    width: 1px;
+  }
+  .box-2 {
+    width: 40%;
+  }
+  .box-2 .line-1 {
+    height: 1px;
+    width: 100%;
+    align-self: stretch;
+  }
+}
