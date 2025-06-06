@@ -93,7 +93,7 @@ main{
     }
 }
 }
-@media (min-width : 1024px){
+@media (min-width : 1020px){
     .view-1{
     h1{
         font-size: 6rem;
@@ -108,27 +108,24 @@ main{
     
     }
     .box-1{
-        width: 60%;
+        width: 65%;
         justify-content: space-between;
          h1 {
                 font-size: 5rem;
+                padding-bottom: 50%;
             }
-
     }
-      .line {
-            height: initial;
-            width: 1px;
-        }
+    .line-2{
+           width: 1px;
+            background: black;
+            margin: 0 2rem;
+            height: auto;
+            min-height: 200px;
+            align-self: stretch;
+    }
+     
 
     .box-2{
-        width: 40%;
-    
-                  
-    .line-1 {
-                height: 1px;
-                width: 100%;
-                align-self: stretch;
-            }
-
-        }
+        width: 35%;
+    }
 }
