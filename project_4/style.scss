@@ -103,3 +103,34 @@ main{
         }
     }
 }
+@media(min-width : 900px){
+    main{
+        padding: 4rem;
+        .section-2{
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 2rem;
+    
+        }
+        .section-3{
+             margin-top: 2rem;
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            .hello{
+                margin-top: 3rem;
+                width: 30%;
+            }
+            .box-1{
+                width: 70%;
+                flex-direction: row-reverse;
+                .box-2{
+                    h1{
+                        font-size: 7rem;
+                    }
+                    gap: 4rem;
+                }
+            }
+    }
+    }}
