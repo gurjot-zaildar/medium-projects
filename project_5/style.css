@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(225, 223, 223);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 30px;
+}
+
+.main {
+  border-radius: 12px;
+  line-height: 13px;
+  width: 30VW;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  justify-content: center;
+}
+.main img {
+  border-radius: 50%;
+  margin-top: 20px;
+  height: 120px;
+  width: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 35%;
+  border-style: solid;
+  border-width: 1px;
+}
+.main h1 {
+  text-align: center;
+  color: rgb(35, 35, 35);
+  font-size: 2rem;
+}
+.main h2 {
+  text-align: center;
+  opacity: 50%;
+  font-size: 1.5rem;
+}
+.main h3 {
+  text-align: center;
+  color: rgb(21, 208, 0);
+}
+.main .skill {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 35px;
+}
+.main .skill #wo {
+  background-color: rgb(10, 173, 232);
+}
+.main .skill #wo h1 {
+  color: #ffffff;
+  font-weight: 600;
+}
+.main .skill .box {
+  border-style: solid;
+  border-color: rgb(164, 164, 164);
+  border-width: 1px;
+  border-radius: 20px;
+  padding: 5px;
+}
+.main .skill .box h1 {
+  font-size: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.main P {
+  margin-bottom: 40px;
+  text-align: center;
+  opacity: 70%;
+}
+.main .line {
+  background-color: black;
+  height: 1px;
+}
+.main button {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-width: 0px;
+  background-color: #ffffff;
+  color: rgb(57, 57, 57);
+}
