@@ -12,12 +12,15 @@ button.forEach(function(button){
 button.addEventListener('mouseout',function(){
     button.style.color='rgba(69, 69, 69, 1)'
     button.style.backgroundColor="rgba(255, 255, 255, 1)"
+    if(button.innerHTML== "CONNECTED"){
+         button.style.color='rgba(0, 85, 0, 1)'
+          button.style.backgroundColor="rgba(38, 255, 0, 0.37)"
+    }
 })
 })
 button.forEach(function(button){
 button.addEventListener('click',function(){
-    button.style.color='rgba(0, 72, 255, 1)'
-    button.style.backgroundColor="rgba(38, 255, 0, 1)"
+    button.innerHTML="CONNECTED"
 })
 })
 box.forEach(function(box){
