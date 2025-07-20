@@ -186,24 +186,49 @@ button.addEventListener('mouseout',function(){
     }
 })
 })
+let ison= false;
 button.forEach(function(button){
 button.addEventListener('click',function(){
+    if(ison==false){
     button.innerHTML="CONNECTED"
+    ison=true
+    }else{
+        button.innerHTML="CONNECT"
+        ison=false
+    }
 })
 })
 box.forEach(function(box){
 box.addEventListener('mouseenter',function(){
     box.style.backgroundColor='rgb(10, 173, 232)';
+      box.style.transform = 'scale(1.2)';
+        box.style.transition = 'transform 0.2s cubic-bezier(0.4,0,0.2,1), background-color 0.2s';
     box.querySelectorAll("h1").forEach(function(e1){
+        
         e1.style.color="white"
+
     })
 })
 })
 box.forEach(function(box){
-box.addEventListener('mouseout',function(){
-    box.style.backgroundColor='rgba(255, 255, 255, 1)';
-    box.querySelectorAll("h1").forEach(function(e1){
-        e1.style.color="black"
-    })
+box.addEventListener('mouseleave',function(){
+     if (box.id !== "wo") {
+           box.style.backgroundColor='rgba(255, 255, 255, 1)';
+            box.querySelectorAll("h1").forEach(function(e1){
+                e1.style.color = "rgba(0, 0, 0, 1)";
+            });
+        }
+    
+    box.style.transform = 'scale(1)';
+ 
 })
+})
+main.forEach(function(main){
+    main.addEventListener("mouseenter",function(){
+        main.style.transform= "scale(1.04)"
+        main.style.transition= "transform 0.25s"
+    })
+    main.addEventListener("mouseleave",function(){
+        main.style.transform="scale(1)"
+    })
 })
