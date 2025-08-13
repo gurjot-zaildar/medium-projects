@@ -7,13 +7,34 @@
       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-
     <div class="main bg-slate-950 h-screen">
-        <h1 class=" text-white ">GitHub User Finder</h1>
-        <h1 class="text-white">Search and view GitHub user profile in Style</h1>
-        <div class="search ">
-            <button>Search</button>
+        <h1 class=" text-white text-center text-6xl font-bold ">GitHub User Finder</h1>
+        <h1 class="text-white  text-center text-xl mt-7">Search and view GitHub user profile in Style</h1>
+        <div class="search flex p-3 bg-slate-700 w-1/2 mx-auto rounded-xl m-5 border-2 border-sky-500 box-content">
+            <input type="text" placeholder="Enter GitHub username..." class="flex-1 bg-transparent text-white outline-none" >
+            <button class="bg-blue-600 hover:scale-120 hover:bg-violet-500 active:bg-sky-500 text-white rounded-xl p-1 "> Search </button>
         </div>
+        <div class="box bg-slate-700 p-5 w-1/2 flex mx-auto rounded-xl text-white border-2 border-gray-500">
+            <div class="img">           
+            <img class=" h-30 w-30 br-50 rounded-full " src="https://images.unsplash.com/photo-1754765297352-c63d9713895d?q=80&w=427&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo">
+            </div>
+            <div class="info ml-10 leading-6.3 ">
+                <h1 class="font-bold text-3xl ">The Octocat</h1>
+                <h2>@octacat</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <div class="reach flex gap-6 leading-10">
+                    <h1 class="font-semibold">Public Repos: 8</h1>
+                     <h1 class="font-semibold">Followers: 5600+</h1>
+                      <h1 class="font-semibold">Following: 8</h1>
+                </div>
+                <div class="end flex gap-3">
+                    <h1>Location: San Francisco</h1>
+                    <h1>Company: GitHub</h1>
+                    <h1>Bolog: GitHub.blog</h1>
+                </div>
+            </div>
+        </div>
+        <h1 class=" text-white text-center p-8">Built with❤using Talwind CSS</h1>
     </div>
 
     <script src="script.js"></script>
